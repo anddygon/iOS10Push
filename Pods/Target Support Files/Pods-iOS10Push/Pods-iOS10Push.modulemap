@@ -1,0 +1,6 @@
+framework module Pods_iOS10Push {
+  umbrella header "Pods-iOS10Push-umbrella.h"
+
+  export *
+  module * { export * }
+}

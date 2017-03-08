@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9B83DA42ABBC1CC971E604E /* Pods_iOS10Push.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFECFB924815DCC283A339E0 /* Pods_iOS10Push.framework */; };
 		E14B567B1E6FD4C80077FA14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B567A1E6FD4C80077FA14 /* AppDelegate.swift */; };
 		E14B567D1E6FD4C80077FA14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B567C1E6FD4C80077FA14 /* ViewController.swift */; };
 		E14B56801E6FD4C80077FA14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14B567E1E6FD4C80077FA14 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1443DB5819C0118608C1CF8C /* Pods-iOS10Push.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS10Push.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS10Push/Pods-iOS10Push.release.xcconfig"; sourceTree = "<group>"; };
+		8CF1DA7561252DBCA99F8DE7 /* Pods-iOS10Push.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS10Push.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS10Push/Pods-iOS10Push.debug.xcconfig"; sourceTree = "<group>"; };
 		E14B56771E6FD4C80077FA14 /* iOS10Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS10Push.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14B567A1E6FD4C80077FA14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E14B567C1E6FD4C80077FA14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,6 +26,7 @@
 		E14B56841E6FD4C80077FA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E14B56861E6FD4C80077FA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E14B568C1E6FD4D40077FA14 /* iOS10Push.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS10Push.entitlements; sourceTree = "<group>"; };
+		FFECFB924815DCC283A339E0 /* Pods_iOS10Push.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS10Push.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B83DA42ABBC1CC971E604E /* Pods_iOS10Push.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01FE271F98B47B038619A940 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CF1DA7561252DBCA99F8DE7 /* Pods-iOS10Push.debug.xcconfig */,
+				1443DB5819C0118608C1CF8C /* Pods-iOS10Push.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F13895D8CC31C692C662C03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFECFB924815DCC283A339E0 /* Pods_iOS10Push.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E14B566E1E6FD4C80077FA14 = {
 			isa = PBXGroup;
 			children = (
 				E14B56791E6FD4C80077FA14 /* iOS10Push */,
 				E14B56781E6FD4C80077FA14 /* Products */,
+				01FE271F98B47B038619A940 /* Pods */,
+				9F13895D8CC31C692C662C03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E14B56891E6FD4C80077FA14 /* Build configuration list for PBXNativeTarget "iOS10Push" */;
 			buildPhases = (
+				B1E38AD023D6AAC4E557C232 /* [CP] Check Pods Manifest.lock */,
 				E14B56731E6FD4C80077FA14 /* Sources */,
 				E14B56741E6FD4C80077FA14 /* Frameworks */,
 				E14B56751E6FD4C80077FA14 /* Resources */,
+				B7AE48412D8D47354415A423 /* [CP] Embed Pods Frameworks */,
+				45BA28DD542DA62A55EDA008 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,6 +168,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45BA28DD542DA62A55EDA008 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS10Push/Pods-iOS10Push-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E38AD023D6AAC4E557C232 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7AE48412D8D47354415A423 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS10Push/Pods-iOS10Push-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E14B56731E6FD4C80077FA14 /* Sources */ = {
@@ -267,6 +342,7 @@
 		};
 		E14B568A1E6FD4C80077FA14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF1DA7561252DBCA99F8DE7 /* Pods-iOS10Push.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iOS10Push/iOS10Push.entitlements;
@@ -282,6 +358,7 @@
 		};
 		E14B568B1E6FD4C80077FA14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1443DB5819C0118608C1CF8C /* Pods-iOS10Push.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iOS10Push/iOS10Push.entitlements;
